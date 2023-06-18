@@ -8,6 +8,7 @@ $(document).ready(function() {
             }
         });
     });
+    $("#myfoot").load("footer.html");
     navigator.geolocation.getCurrentPosition(success,fail);
     function success(position){
         let myyear=new Date().getFullYear();

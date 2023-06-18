@@ -8,15 +8,15 @@
 }
 .nav{
     font-weight: bolder;
-    width: 97%;
-    height: 65px;
+    width: 100%;
+    height: 85px;
     overflow: hidden;
-    padding: 15px;  
     margin: auto;
     border-bottom: 1px solid #2aa9f84d;
 }
 #logo{
     border-radius: 50%;
+    padding: 10px;
     width: 70px;
 }
 .logo{
@@ -24,7 +24,7 @@
     float: left;
 }
 .logo p{
-    padding-top: 20px;
+    padding-top: 25px;
     float: right;
 }
 .navbtn{
@@ -47,12 +47,12 @@
 footer{
     position: absolute;
     bottom: 0;
-    height: 50px;
-    width: 97.9%;
+    height: 75px;
+    width: 100%;
     display: inline-block;
-    padding: 20px;
     background-color: #2AA8F8;
-    margin: au;
+    padding: 0;
+    margin: 0;
 }
 footer img{
     padding: 5px;
@@ -67,7 +67,15 @@ footer li{
 }
 #foot1{
     float: left;
+    height: 25px;
+    margin: auto;
+    width: 25%;
+    padding: 15px;
 }
 #foot2{
-    padding: 5px;
+    float: right;
+    height: 25px;
+    margin: auto;
+    width: 25%;
+    padding: 15px;
 }
