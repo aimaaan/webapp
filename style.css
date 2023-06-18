@@ -1,17 +1,18 @@
 *{
-    font-family:"Poppins";
-    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 20px;
     color: #14142B;
     padding: 0;
     margin: 0;
 }
 .nav{
     font-weight: bolder;
-    width: 95%;
-    height: 70px;
+    width: 97%;
+    height: 65px;
     overflow: hidden;
-    padding: 20px;  
-    margin:  0 20px 0 20px;
+    padding: 15px;  
+    margin: auto;
     border-bottom: 1px solid #2aa9f84d;
 }
 #logo{
@@ -23,7 +24,7 @@
     float: left;
 }
 .logo p{
-    padding-top: 25px;
+    padding-top: 20px;
     float: right;
 }
 .navbtn{
@@ -42,4 +43,31 @@
 }
 .currentpage{
     color:#2AA8F8;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 97.9%;
+    display: inline-block;
+    padding: 20px;
+    background-color: #2AA8F8;
+    margin: au;
+}
+footer img{
+    padding: 5px;
+    height: 30px;
+    float: right;
+}
+footer li{
+    display: block;
+    list-style: none;
+    color: white;
+    font-size: 15px;
+}
+#foot1{
+    float: left;
+}
+#foot2{
+    padding: 5px;
 }
