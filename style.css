@@ -7,15 +7,27 @@
 }
 .nav{
     font-weight: bolder;
-    width: 100%;
+    width: 95%;
+    height: 70px;
     overflow: hidden;
     padding: 20px;  
-    margin: 0;
+    margin:  0 20px 0 20px;
+    border-bottom: 1px solid #2aa9f84d;
+}
+#logo{
+    border-radius: 50%;
+    width: 70px;
 }
 .logo{
+    width: 10%;
     float: left;
 }
+.logo p{
+    padding-top: 25px;
+    float: right;
+}
 .navbtn{
+    padding-top:25px;
     float: right;
     margin-right: 50px;
 }
