@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prayer Times</title>
+</head>
+<body>
+  <h1>Prayer Times</h1>
+  
+  <p>Latitude: <span id="latitude"></span></p>
+  <p>Longitude: <span id="longitude"></span></p>
+
+  <h2>Prayer Times Today:</h2>
+  <table>
+    <tr>
+      <th>Prayer</th>
+      <th>Time</th>
+    </tr>
+    <tr>
+      <td>Fajr</td>
+      <td id="fajrTime"></td>
+    </tr>
+    <tr>
+      <td>Dhuhr</td>
+      <td id="dhuhrTime"></td>
+    </tr>
+    <tr>
+      <td>Asr</td>
+      <td id="asrTime"></td>
+    </tr>
+    <tr>
+      <td>Maghrib</td>
+      <td id="maghribTime"></td>
+    </tr>
+    <tr>
+      <td>Isha</td>
+      <td id="ishaTime"></td>
+    </tr>
+  </table>
+
+  <script>
+    // Function to handle the successful retrieval of the user's location
+    function handleLocationSuccess(position) {
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+
+      // Display the latitude and longitude
+      document.getElementById('latitude').textContent = latitude;
+      document.getElementById('longitude').textContent = longitude;
+
+      // Make the API request to get prayer times using the user's location
+      fetch(`https://api.aladhan.com/v1/calendar?latitude=${latitude}&longitude=${longitude}&method=2&month=${new Date().getMonth() + 1}&year=${new Date().getFullYear()}&tune=0,0,0,0,0,0,0,0,0&school=0&offset=0`)
+        .then(response => response.json())
+        .then(data => {
+          // Extract prayer times for today
+          const prayerTimes = data.data[new Date().getDate() - 1].timings;
+
+          // Display the prayer times
+          document.getElementById('fajrTime').textContent = prayerTimes.Fajr;
+          document.getElementById('dhuhrTime').textContent = prayerTimes.Dhuhr;
+          document.getElementById('asrTime').textContent = prayerTimes.Asr;
+          document.getElementById('maghribTime').textContent = prayerTimes.Maghrib;
+          document.getElementById('ishaTime').textContent = prayerTimes.Isha;
+        })
+        .catch(error => {
+          console.log('Error fetching prayer times:', error);
+        });
+    }
+
+    // Function to handle the error in retrieving the user's location
+    function handleLocationError(error) {
+      console.log('Error retrieving location:', error.message);
+    }
+
+    // Request the user's location
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(handleLocationSuccess, handleLocationError);
+    } else {
+      console.log('Geolocation is not supported by this browser.');
+    }
+  </script>
+</body>
+</html>

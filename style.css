@@ -1,0 +1,33 @@
+*{
+    font-family:"Poppins";
+    font-size: 22px;
+    color: #14142B;
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    font-weight: bolder;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;  
+    margin: 0;
+}
+.logo{
+    float: left;
+}
+.navbtn{
+    float: right;
+    margin-right: 50px;
+}
+.navbtn li{
+    float: left;
+    display: block;
+    list-style: none;
+    padding:0 25px 0 25px;
+}
+.navbtn a{
+    text-decoration: none;
+}
+.currentpage{
+    color:#2AA8F8;
+}
