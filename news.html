@@ -16,10 +16,10 @@
     <div class="flex-wrapper">
         <div class="content">
             <div class="bigbox">
-                <h4>Title</h4>
+                <h4 id="title">Title</h4>
                 <div class="newsbox">
                     <img src="img/logo.png" alt="placeholder">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos magnam eaque perferendis, qui incidunt accusamus natus cum tempora reiciendis laboriosam libero quod voluptate corporis enim. Quae sit odio quam fugit.</p>
+                    <p id="info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos magnam eaque perferendis, qui incidunt accusamus natus cum tempora reiciendis laboriosam libero quod voluptate corporis enim. Quae sit odio quam fugit.</p>
                 </div>
                 <a href="#">Read More</a>
             </div>
@@ -59,7 +59,11 @@
         const db = getDatabase();
         function selecdata(){
             const dbref=ref(db);
-            get(child(dbref,))
+            get(child(dbref,1)).then((snapshot)=>{
+                if(snapshot.exist()){
+                    document.getElementById
+                }
+            })
         }
       </script>
 </body>
