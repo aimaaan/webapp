@@ -85,6 +85,10 @@ footer li{
     width: 25%;
     padding: 15px;
 }
+#content{
+    padding-top: 50px;
+    margin: auto;
+}
 .box{
     display: flex;
     justify-content: space-between;
