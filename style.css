@@ -127,8 +127,8 @@ footer li{
                 5px -5px 0px #ffffff;
 }
 
-/*location-css*/
 
+/*location-css*/
 body {
     display: flex;
     flex-direction: column;
@@ -142,8 +142,8 @@ body {
 }
 
 .search-container {
-    position: absolute;  /* Change this from fixed to absolute */
-    top: 50%;  /* Position the search bar in the center of the page */
+    position: fixed;  /* Changed from absolute to fixed */
+    top: 20%;  /* Adjust this value as needed to position the search bar */
     left: 50%;
     transform: translate(-50%, -50%);  /* Correct for the size of the search bar */
     width: 60%;
@@ -168,7 +168,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 150px;  /* Adjust as needed to ensure search bar has enough space */
 }
 
 .property-row {
@@ -176,7 +176,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     width: 80%;
-    margin-top: 100px; /* push the properties below the search bar */
+    margin-top: 150px; /* push the properties below the search bar */
 }
 
 .property-card {
