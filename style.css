@@ -124,3 +124,50 @@ footer li{
                 5px -5px 0px #ffffff;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.search-container {
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+#search {
+    padding: 10px;
+    font-size: 18px;
+    width: 300px;
+}
+
+.property-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.property-card {
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+}
+
+.property-card img {
+    width: 100%;
+    height: auto;
+}
