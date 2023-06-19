@@ -46,8 +46,10 @@ getDocs(q)
                     <h4>${title}</h4>
                     <div class="newsbox">
                         <img src="${image}" alt="placeholder">
-                        <p class='contents'>${content}</p>
-                        <a href="#">Read More</a>
+                        <div class="contents">
+                            <p class='contents'>${content}</p>
+                            <a href="#">Read More</a>
+                        </div>
                     </div>
                 </div>
             `;

@@ -137,7 +137,7 @@ footer li{
                 5px -5px 0px #a3ebff;
 }
 .bigbox h4,.bigbox p{
-    padding: 15px;
+    padding: 10px;
 }
 .newsbox{
     display: flex;
@@ -145,6 +145,7 @@ footer li{
     justify-content: space-between;
     padding: 15px;
     width: 100%;
+    overflow: hidden;
 }
 .newsbox img{
     width: 15%;
@@ -154,6 +155,14 @@ footer li{
 }
 .contents{
     width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contents a{
+    float: right;
+    text-decoration: none;
+    color: #0000EE;
 }
 
 .container {
