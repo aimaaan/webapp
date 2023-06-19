@@ -157,3 +157,59 @@ footer li{
     border: 2px solid #2AA8F8;
     border-radius: 20px;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.search-container {
+    margin-bottom: 20px;
+    width: 60%;
+}
+
+#search {
+    padding: 16px 24px;
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    width: 100%;
+    outline: none;
+}
+
+#search:focus {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.property-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.property-card {
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+}
+
+.property-card img {
+    width: 100%;
+    height: auto;
+}
