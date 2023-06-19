@@ -124,10 +124,13 @@ footer li{
                 5px -5px 0px #ffffff;
 }
 
+/*location-css*/
+
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
     background-color: #f0f0f0;
     margin: 0;
@@ -135,18 +138,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.container {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
 .search-container {
-    margin-bottom: 20px;
+    position: fixed;
+    top: 20px;
     width: 60%;
+    z-index: 1;
 }
 
 #search {
@@ -162,10 +158,20 @@ body {
     box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
 }
 
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+
 .property-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 80%;
+    margin-top: 100px; /* push the properties below the search bar */
 }
 
 .property-card {
@@ -179,3 +185,4 @@ body {
     width: 100%;
     height: auto;
 }
+
