@@ -93,9 +93,7 @@ footer li{
     margin: 20px auto;
     padding: 25px;
     border-radius: 20px;
-    background: #2AA8F8;
-    box-shadow:  -5px 5px 0px #248fd3,
-                5px -5px 0px #30c1ff;
+    background: white;
     
 }
 .content{
@@ -106,7 +104,6 @@ footer li{
     align-items: center;
 }
 .box h4{
-    color: white;
     float: left;
     clear: left;
     width: 100%;
@@ -115,12 +112,48 @@ footer li{
     height: 25px;
 }
 .smallbox{
-    background-color: white;
-    border-radius: 20px;
     width: 45%;
     margin: 0;
     padding: 15px;
-    box-shadow:  -5px 5px 0px #d9d9d9,
-                5px -5px 0px #ffffff;
+    border-radius: 20px;
+    background: #9EE4FB;
+    box-shadow:  -5px 5px 0px #99ddf3,
+                5px -5px 0px #a3ebff;
 }
-
+.smallbox a{
+    font-style: italic;
+    float: right;
+    color: #0000EE;
+    text-decoration: none;
+}
+.bigbox{
+    width: 75%;
+    height: 40%;
+    margin: 20px auto;
+    border-radius: 20px;
+    background: #9EE4FB;
+    box-shadow:  -5px 5px 0px #99ddf3,
+                5px -5px 0px #a3ebff;
+}
+.bigbox h4,.bigbox p{
+    padding: 15px;
+}
+.bigbox a{
+    font-style: italic;
+    padding:15px;
+    float: right;
+    text-decoration: none;
+    color: #0000EE;
+}
+.newsbox{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    width: 100%;
+}
+.newsbox img{
+    width: 25%;
+    height: 175px;
+    border: 2px solid #2AA8F8;
+    border-radius: 20px;
+}

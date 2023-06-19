@@ -15,10 +15,52 @@
     <nav id="navbar"></nav>
     <div class="flex-wrapper">
         <div class="content">
-            
+            <div class="bigbox">
+                <h4>Title</h4>
+                <div class="newsbox">
+                    <img src="img/logo.png" alt="placeholder">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos magnam eaque perferendis, qui incidunt accusamus natus cum tempora reiciendis laboriosam libero quod voluptate corporis enim. Quae sit odio quam fugit.</p>
+                </div>
+                <a href="#">Read More</a>
+            </div>
+            <div class="bigbox">
+                <h4>Title</h4>
+                <div class="newsbox">
+                    <img src="" alt="placeholder">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos magnam eaque perferendis, qui incidunt accusamus natus cum tempora reiciendis laboriosam libero quod voluptate corporis enim. Quae sit odio quam fugit.</p>
+                </div>
+                <a href="#">Read More</a>
+            </div>
         </div>
         <footer id="myfoot"></footer>
     </div>
     <script src="script.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAmDbLE18UOfCkvyf7oC6znaY5KPrRSzhg",
+          authDomain: "webproject-ecc18.firebaseapp.com",
+          projectId: "webproject-ecc18",
+          storageBucket: "webproject-ecc18.appspot.com",
+          messagingSenderId: "16289506154",
+          appId: "1:16289506154:web:4731cf09853bb1f1733b13"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        import {getDatabase, ref, get, set, child, update, remoce}
+        from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
+        const db = getDatabase();
+        function selecdata(){
+            const dbref=ref(db);
+            get(child(dbref,))
+        }
+      </script>
 </body>
 </html>
