@@ -16,7 +16,7 @@
 }
 #logo{
     border-radius: 50%;
-    padding: 7px;
+    padding: 12px;
     width: 70px;
 }
 .logo{
@@ -24,6 +24,7 @@
     float: left;
 }
 .logo p{
+    color: #2a7cf8;
     padding-top: 25px;
     float: right;
 }
@@ -138,24 +139,21 @@ footer li{
 .bigbox h4,.bigbox p{
     padding: 15px;
 }
-.bigbox a{
-    font-style: italic;
-    padding:15px;
-    float: right;
-    text-decoration: none;
-    color: #0000EE;
-}
 .newsbox{
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 15px;
     width: 100%;
 }
 .newsbox img{
-    width: 25%;
+    width: 15%;
     height: 175px;
     border: 2px solid #2AA8F8;
     border-radius: 20px;
+}
+.contents{
+    width: 75%;
 }
 
 .container {
