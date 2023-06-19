@@ -89,17 +89,30 @@ footer li{
     padding-top: 55px;
     margin: auto;
 }
+
 .box{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     height: 40%;
-    width: 65%;
+    width: 75%;
     margin: 20px auto;
     padding: 25px;
     border-radius: 20px;
     background: white;
-    
+}
+.news-wrapper {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    align-items: center;
+}
+.smallimg{
+    border: 1px solid#2a7cf8;
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin: 15px;
 }
 .content{
     padding: 20px;
@@ -120,6 +133,9 @@ footer li{
     border-radius: 25px;
     margin: 15px;
 }
+#news{
+    padding: 15px;
+}
 .box h4{
     float: left;
     clear: left;
@@ -129,7 +145,9 @@ footer li{
     height: 25px;
 }
 .smallbox{
+    font-weight: normal;
     width: 45%;
+    height: 200px;
     margin: 0;
     padding: 15px;
     border-radius: 20px;
@@ -246,6 +264,9 @@ footer li{
     color: #313030;
 }
 #full-news-content img{
+    border: 3px solid #05BCD2;
+    border-radius: 25px;
+    margin: 15px;
     height: 300px;
 }
 #full-news-content{
@@ -254,14 +275,16 @@ footer li{
     padding-left: 200px;
 }
 .newspage{
-    font-size: 14px;
     display: flex;
     float: left;
     width: 75%;
     margin:auto;
 }
-.newspage h2,.newspage p, .newspage img{
-    padding:15px
+.newspage p{
+    font-size: 16px;
+    border-radius: 15px;
+    border: 3px solid #05BCD2;
+    padding: 10px;
 }
 .ndate{
     color: #2a7cf8  ;
