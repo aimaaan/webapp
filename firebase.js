@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
-import { getFirestore, collection, getDocs, orderBy, query } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js";
+import { getFirestore, collection, getDocs, doc, orderBy, query } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js";
 
 // Your web app's Firebase configuration
@@ -28,10 +28,14 @@ getDocs(q)
     .then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
             const newsData = doc.data();
+            const id = doc.id;
             const title = newsData.title;
             let content = newsData.content;
             const date = newsData.date;
             const image = newsData.image;
+
+            //full news
+            const fullContentPageURL = `fullnews.html?id=${id}`;
 
             // Limit content to 25 words
             const words = content.split(' ');
@@ -48,7 +52,7 @@ getDocs(q)
                         <img src="${image}" alt="placeholder">
                         <div class="contents">
                             <p class='contents'>${content}</p>
-                            <a href="#">Read More</a>
+                            <a href="${fullContentPageURL}">Read More</a>
                         </div>
                     </div>
                 </div>

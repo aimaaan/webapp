@@ -56,7 +56,7 @@ footer{
     height: 75px;
     width: 100%;
     display: inline-block;
-    background-color: #2AA8F8;
+    background-color: #05BCD2;
     padding: 0;
     margin: 0;
 }
@@ -86,7 +86,7 @@ footer li{
     padding: 15px;
 }
 #content{
-    padding-top: 50px;
+    padding-top: 55px;
     margin: auto;
 }
 .box{
@@ -107,6 +107,18 @@ footer li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
+}
+.conshe{
+    margin: auto;
+    padding: 20px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+.conshe table{
+    border-radius: 25px;
+    margin: 15px;
 }
 .box h4{
     float: left;
@@ -135,13 +147,12 @@ footer li{
     width: 75%;
     height: 40%;
     margin: 20px auto;
-    border-radius: 20px;
-    background: #9EE4FB;
-    box-shadow:  -5px 5px 0px #99ddf3,
-                5px -5px 0px #a3ebff;
+    border-radius: 10px;
+    background: rgba(158, 228, 251, 15%);
 }
-.bigbox h4,.bigbox p{
-    padding: 10px;
+.bigbox h4{
+    padding-top: 10px;
+    padding-left: 25px;
 }
 .newsbox{
     display: flex;
@@ -152,10 +163,11 @@ footer li{
     overflow: hidden;
 }
 .newsbox img{
-    width: 15%;
+    width: 20%;
     height: 175px;
-    border: 2px solid #2AA8F8;
+    border: 1px solid #2AA8F8;
     border-radius: 20px;
+    margin-left: 10px;
 }
 .contents{
     width: 75%;
@@ -180,6 +192,7 @@ footer li{
 
 .search-container {
     margin: auto;
+    margin-top: 20px;
     margin-bottom: 20px;
     width: 60%;
 }
@@ -213,4 +226,43 @@ footer li{
 .property-card img {
     width: 100%;
     height: auto;
+}
+.demTable {
+    border:5px solid #b3adad;
+    border-collapse:collapse;
+    border-spacing:5px;
+    padding:5px;
+}
+.demTable th {
+    border:5px solid #b3adad;
+    padding:5px;
+    background: #f0f0f0;
+    color: #313030;
+}
+.demTable td {
+    border:5px solid #b3adad;
+    text-align:center;
+    padding:5px;
+    color: #313030;
+}
+#full-news-content img{
+    height: 300px;
+}
+#full-news-content{
+    width: 100%;
+    margin: auto;
+    padding-left: 200px;
+}
+.newspage{
+    font-size: 14px;
+    display: flex;
+    float: left;
+    width: 75%;
+    margin:auto;
+}
+.newspage h2,.newspage p, .newspage img{
+    padding:15px
+}
+.ndate{
+    color: #2a7cf8  ;
 }
