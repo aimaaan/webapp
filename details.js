@@ -20,19 +20,28 @@ $(document).ready(function() {
         $('#property-image').attr('src', property.imageUrl);
         $('#property-location').text(property.location);
         $('#property-description').text(property.description);
+        initMap(property.location);
     }
 });
 
-function initMap() {
-    var propertyLocation = { lat: 2.9192942, lng: 101.6781248 }; // Replace with actual property location
+function initMap(location) {
+    var geocoder = new google.maps.Geocoder();
 
-    var map = new google.maps.Map(document.getElementById('property-map'), {
-        zoom: 15,
-        center: propertyLocation
-    });
+    geocoder.geocode({ 'address': location }, function(results, status) {
+        if (status === 'OK') {
+            var propertyLocation = results[0].geometry.location;
 
-    var marker = new google.maps.Marker({
-        position: propertyLocation,
-        map: map
+            var map = new google.maps.Map(document.getElementById('property-map'), {
+                zoom: 15,
+                center: propertyLocation
+            });
+
+            var marker = new google.maps.Marker({
+                position: propertyLocation,
+                map: map
+            });
+        } else {
+            alert('Geocode was not successful for the following reason: ' + status);
+        }
     });
 }
