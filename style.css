@@ -310,11 +310,12 @@ html, body {
 }
   
 .demTable th {
-    background-color: #f2f2f2;
+    background-color: rgba(158, 228, 251, 25%);
     color: #333;
     font-weight: bold;
     padding: 10px;
     text-align: center;
+    border-bottom: 1px solid #05BCD2;
 }
 .demTable td {
     padding: 10px;
@@ -332,6 +333,7 @@ html, body {
     display: flex;
 } 
 .demTable {
+    border: 1px solid #05BCD2;
     border-collapse: collapse;
     width: 50%; 
     margin-right: 10px;

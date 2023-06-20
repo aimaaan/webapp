@@ -16,7 +16,19 @@ $(document).ready(function(){
             }
         })
         .then(data=>{
-            console.log(data);
+            const todayData = data.data[new Date().getDate() - 1];
+            const tomorrowData = data.data[new Date().getDate()];
+            document.getElementById('Tfjr').innerHTML=todayData.timings.Fajr.replace(/\s\(\+\d+\)/, '');
+            document.getElementById('Tdhuhr').innerHTML=todayData.timings.Dhuhr.replace(/\s\(\+\d+\)/, '');
+            document.getElementById('Tasr').innerHTML=todayData.timings.Asr.replace(/\s\(\+\d+\)/, '');
+            document.getElementById('Tmag').innerHTML=todayData.timings.Maghrib.replace(/\s\(\+\d+\)/, '');
+            document.getElementById('Tisha').innerHTML=todayData.timings.Isha.replace(/\s\(\+\d+\)/, '');
+            document.getElementById('Nfjr').innerHTML=tomorrowData.timings.Fajr.replace(/\s\(\+\d+\)/, '');
+            document.getElementById('Ndhuhr').innerHTML=tomorrowData.timings.Dhuhr.replace(/\s\(\+\d+\)/, '');
+            document.getElementById('Nasr').innerHTML=tomorrowData.timings.Asr.replace(/\s\(\+\d+\)/, '');
+            document.getElementById('Nmag').innerHTML=tomorrowData.timings.Maghrib.replace(/\s\(\+\d+\)/, '');
+            document.getElementById('Nisha').innerHTML=tomorrowData.timings.Isha.replace(/\s\(\+\d+\)/, '');
+
         })
         .catch(error=>{
             console.log("Error details: " + error)
