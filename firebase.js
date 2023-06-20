@@ -46,20 +46,16 @@ getDocs(q)
             // Display the data on your webpage
             const newsElement = document.createElement("div");
             newsElement.innerHTML = `
-            <div class="bigbox">
-            <h4>${title}</h4>
-            <div class="newsbox">
-                <div class="content-wrapper">
-                    <div class="image-container">
+                <div class="bigbox">
+                    <h4>${title}</h4>
+                    <div class="newsbox">
                         <img src="${image}" alt="placeholder">
-                    </div>
-                    <div class="text-container">
-                        <p class="cut-content">${content}</p>
-                        <a href="${fullContentPageURL}">Read More</a>
+                        <div class="contents">
+                            <p class='contents'>${content}</p>
+                            <a href="${fullContentPageURL}">Read More</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            </div>
             `;
             document.getElementById("content").appendChild(newsElement);
         });

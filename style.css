@@ -17,7 +17,7 @@ html, body {
     flex-direction: column;
 }
 /*this is the navigation parts */
-.nav {
+.nav{
     font-weight: bolder;
     width: 100%;
     height: 85px;
@@ -28,38 +28,35 @@ html, body {
     margin: auto;
     border-bottom: 1px solid #2aa9f84d;
 }
-
-#logo {
+#logo{
     border-radius: 50%;
     padding: 12px;
     width: 70px;
 }
-
-.logo {
+.logo{
     width: 10%;
     float: left;
 }
-
-.navbtn {
+.logo p{
+    color: #2a7cf8;
     padding-top: 25px;
+    float: right;
+}
+.navbtn{
+    padding-top:25px;
     float: right;
     margin-right: 50px;
 }
-
-.navbtn ul {
+.navbtn li{
+    float: left;
+    display: block;
     list-style: none;
-    padding: 0;
-  }
-
-.navbtn li {
-    display: inline-block;
-    margin-right: 20px;
+    padding:0 25px 0 25px;
 }
-
-.navbtn a {
+.navbtn a{
     text-decoration: none;
-    color: #000;
 }
+<<<<<<< HEAD
 
 .currentpage {
     color: #2AA8F8!important;
@@ -98,11 +95,16 @@ html, body {
     vertical-align: middle;
 }
 
+=======
+.currentpage{
+    color:#2AA8F8;
+}
+>>>>>>> parent of 8cefb2a (Merge branch 'main' of https://github.com/info2302sec2/webapp into main)
 /*this is the footer parts */
 #myfoot {
     background-color: #05BCD2;
-    padding: 7px 15px;
-    font-size: 14px; 
+    padding: 10px 15px; /* Adjust the padding values */
+    font-size: 14px; /* Adjust the font size */
   }
   
   .footer-content {
@@ -149,12 +151,6 @@ footer{
 .logobig{
     width: 200px;
 }
-.pagetitle{
-    font-size: larger;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 50px;
-}
 .content {
     flex-grow: 1;
     width: 80%;
@@ -166,15 +162,12 @@ footer{
 }
 .topcontent{
     text-align: center;
-    margin: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    height: 500px;
+    margin: 30px;
     width: 100%;
-    background-color: rgba(158, 228, 251, 25%);
-}
-.smalldesc{
-    width: 50%;
-    margin: auto;
+    background-color: rgba(158, 228, 251, 50%);
+    border-radius: 5%;
+    padding: 20px;
 }
 #content{
     padding-top: 55px;
@@ -193,19 +186,6 @@ footer{
     box-shadow:  -5px 5px 0px #248fd3,
                 5px -5px 0px #30c1ff;
     
-    flex-direction: column;
-    align-items: stretch;
-    height: 100%;
-    margin: 50px;
-}
-
-.box > * {
-    flex-grow: 1;
-    overflow: auto;
-}
-.news-wrapper {
-    display: flex;
-    flex-wrap: wrap;
 }
   
 .smallimg {
@@ -243,8 +223,8 @@ footer{
     border-radius: 20px;
     font-weight: normal;
     width: 45%;
-    height: fit-content;
-    margin: 0 15px;
+    height: 200px;
+    margin: 0;
     padding: 15px;
     box-shadow:  -5px 5px 0px #d9d9d9,
                 5px -5px 0px #ffffff;
@@ -271,23 +251,33 @@ footer{
 .newsbox{
     display: flex;
     flex-wrap: wrap;
+<<<<<<< HEAD
+=======
+    justify-content: space-between;
+    padding: 15px;
+>>>>>>> parent of 8cefb2a (Merge branch 'main' of https://github.com/info2302sec2/webapp into main)
     width: 100%;
     overflow: hidden;
 }
 .newsbox img{
-    float: left;
-    width: 15%;
-    height: 150px;
+    width: 20%;
+    height: 175px;
     border: 1px solid #2AA8F8;
+<<<<<<< HEAD
     border-radius: 10px;
     margin: 25px;
+=======
+    border-radius: 20px;
+    margin-left: 10px;
+>>>>>>> parent of 8cefb2a (Merge branch 'main' of https://github.com/info2302sec2/webapp into main)
 }
 .contents{
-    float:right;
-    width: 85%;
-    margin: auto;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
+<<<<<<< HEAD
 .text-container p{
     width: 85%;
     font-size: 18px;
@@ -297,6 +287,9 @@ footer{
 .text-container a {
     padding: 50px;
     margin: auto;
+=======
+.contents a{
+>>>>>>> parent of 8cefb2a (Merge branch 'main' of https://github.com/info2302sec2/webapp into main)
     float: right;
     text-decoration: none;
     color: #0000EE;
@@ -305,8 +298,6 @@ footer{
 
 /*location-css*/
 body {
-.container {
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -427,34 +418,36 @@ body {
     width: 50%; 
     margin-right: 10px;
 }
-#full-news-content h2{
-    font-size: 25px;
-    font-weight: bolder;
-}
 #full-news-content img{
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    float: left;
-    margin: 20px 50px;
-    border: 1px solid #2a7cf8;
+    border: 3px solid #05BCD2;
+    border-radius: 25px;
+    margin: 15px;
+    height: 300px;
 }
 #full-news-content{
+<<<<<<< HEAD
     height: auto;
     min-height: 564px;
     width: 70%;
     margin: 50px auto;
     padding: 50px;
+=======
+    width: 100%;
+    margin: auto;
+    padding-left: 200px;
+}
+.newspage{
+    display: flex;
+    float: left;
+    width: 75%;
+    margin:auto;
+}
+.newspage p{
+    font-size: 16px;
+>>>>>>> parent of 8cefb2a (Merge branch 'main' of https://github.com/info2302sec2/webapp into main)
     border-radius: 15px;
     border: 3px solid #05BCD2;
-    background-color: rgba(158, 228, 251, 15%);
-}
-#full-news-content p{
-    line-height: 1.5;
-    margin-bottom: 20px;
-    font-size: 20px;
     padding: 10px;
-    text-align: justify;
 }
 .ndate{
     color: #2a7cf8  ;
