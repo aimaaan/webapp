@@ -9,31 +9,30 @@ $(document).ready(function() {
         { location: 'Kelantan', description: 'Bazzar Ramadhan Kelantan', imageUrl: 'https://www.johorkini.my/wp-content/uploads/bfi_thumb/bazar-ramadhan-p4egiucvgqace6prxplp24n689lf3bxhb7qrebte68.jpg' },
     ];
 
-    $('#search').on('keyup', function() {
-        var location = $(this).val();
+    var urlParams = new URLSearchParams(window.location.search);
+    var location = urlParams.get('location');
 
-        if (location !== '') {
-            var filteredProperties = properties.filter(function(property) {
-                return property.location.toLowerCase().indexOf(location.toLowerCase()) > -1;
-            });
-
-            $('#properties').empty();
-
-            filteredProperties.forEach(function(property) {
-                var propertyCard = $(`
-                    <div class="property-card">
-                        <img src="${property.imageUrl}" alt="${property.description}">
-                        <h2>${property.location}</h2>
-                        <p>${property.description}</p>
-                    </div>
-                `);
-                        
-                propertyCard.click(function() {
-                    window.location.href = 'details.html?location=' + encodeURIComponent(property.location);
-                });
-                
-                $('#properties').append(propertyCard);
-            });
-        }
+    var property = properties.find(function(property) {
+        return property.location === location;
     });
+
+    if (property) {
+        $('#property-image').attr('src', property.imageUrl);
+        $('#property-location').text(property.location);
+        $('#property-description').text(property.description);
+    }
 });
+
+function initMap() {
+    var propertyLocation = { lat: 2.9192942, lng: 101.6781248 }; // Replace with actual property location
+
+    var map = new google.maps.Map(document.getElementById('property-map'), {
+        zoom: 15,
+        center: propertyLocation
+    });
+
+    var marker = new google.maps.Marker({
+        position: propertyLocation,
+        map: map
+    });
+}
