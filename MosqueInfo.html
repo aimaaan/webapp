@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        font-family: Arial;
+        margin: 0;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      .mySlides img {
+        display: block;
+        width: 50%;
+        margin-left:auto; 
+        margin-right:auto;
+      }
+      
+      /* Position the image container (needed to position the left and right arrows) */
+      .container {
+        position: relative;
+      }
+      
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+      
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursor {
+        cursor: pointer;
+      }
+      .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+ 
+     
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.myTop{
+  text-align:center;
+  font-family:serif;
+  font-size: 100px;
+  background-color:#2AA8F8;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.myMosque img{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.myMosque img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.ClickH a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 50%;
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+.ClickH a:hover, a:active {
+  background-color: red;
+  width: 50%;
+  margin-left:auto; 
+  margin-right:auto;
+}
+      </style>
+</head>
+<body>
+    <h2 style="text-align:center">Mosque Activities</h2>
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 3</div>
+        <p><a href="https://fb.watch/kZIwySzPWZ/"  target="_blank" rel="noopener noreferrer"><img src="image/Advertise 1 Mosque.png" style="width:600px; height:350px;"></a></p>
+</iframe>
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">2 / 3</div>
+        <p><a href="Advertise2.html"><img src="image/Advertise 2 Mosque.png" style="width:600px; height:350px;"></a></p>
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 3</div>
+        <p><a href="Advertise3.html"><img src="image/Advertise 3 Mosque.png" style="width:600px; height:350px;"></a></p>
+      </div>
+        
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+
+      <div class="myTop">
+        <p>Top 5 Mosque In Malaysia</p>
+      </div>
+
+      <div class="row">
+      <div class="myMosque">
+      <a target="_blank" href="image/Mosque1.jpg">
+        <img src="image/Mosque1.jpg" alt="Mosque1" style="width:250px; height:250px;">
+      </a>
+      </div>
+
+      <div class="myMosque">
+        <a target="_blank" href="image/Mosque2.jpg">
+          <img src="image/Mosque2.jpg" alt="Mosque1" style="width:250px; height:250px;">
+        </a>
+        </div>
+
+        <div class="myMosque">
+          <a target="_blank" href="image/Mosque3.jpg">
+            <img src="image/Mosque3.jpg" alt="Mosque1" style="width:250px; height:250px;">
+          </a>
+          </div>
+
+          <div class="myMosque">
+            <a target="_blank" href="image/Mosque4.png">
+              <img src="image/Mosque4.png" alt="Mosque1" style="width:250px; height:250px;">
+            </a>
+            </div>  
+
+            <div class="myMosque">
+              <a target="_blank" href="image/Mosque5.jpg">
+                <img src="image/Mosque5.jpg" alt="Mosque1" style="width:250px; height:250px;">
+              </a>
+              </div>  
+          </div>
+
+          <br><br><div class="ClickH">
+          <a href="TopMosque.html">Click Here For More Details!</a>
+          </div>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <script>
+        let slideIndex = 0;
+        showSlides();
+        let mybutton = document.getElementById("myBtn");
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 8000); // Change image every 2 seconds
+        }
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+        </script>
+</body>
+</html>
