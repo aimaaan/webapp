@@ -1,4 +1,4 @@
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', function(){
     $("#navbar").load("nav.html", function() {
         var currentPageUrl = window.location.href;
         $('.nav a').each(function() {

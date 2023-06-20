@@ -28,6 +28,8 @@ getDocs(q)
     .then((querySnapshot) => {
         const newsWrapper = document.createElement("div");
         newsWrapper.className = "news-wrapper";
+        const activityWrapper = document.createElement("div");
+        activityWrapper.className = "news-wrapper";
 
         querySnapshot.forEach((doc) => {
             const newsData = doc.data();
@@ -59,14 +61,25 @@ getDocs(q)
                 <p>${content}</p>
                 <a href="${fullContentPageURL}">Read More</a>
             `;
+            const activityElement = document.createElement("div");
+            activityElement.className = "smallbox";
+            activityElement.innerHTML = `
+                <h6>${truncatedTitle}</h6>
+                <img src="${image}" alt="news image" class="smallimg">
+                <p>${content}</p>
+                <a href="${fullContentPageURL}">Read More</a>
+            `;
 
             // Append the small box to the news wrapper
             newsWrapper.appendChild(newsElement);
+            activityWrapper.appendChild(activityElement);
         });
 
         // Append the news wrapper to the news section
         const newsSection = document.getElementById("news");
         newsSection.appendChild(newsWrapper);
+        const activitySection = document.getElementById("activitys");
+        activitySection.appendChild(activityWrapper);
     })
     .catch((error) => {
         console.log("Error getting news documents: ", error);
