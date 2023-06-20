@@ -59,7 +59,7 @@ html, body {
 }
 
 .currentpage {
-    color: #2AA8F8;
+    color: #2AA8F8!important;
 }
 
 /* Dropdown content */
@@ -499,7 +499,7 @@ clear: both;
 display: table;
 }
 
-.ClickH a:link, a:visited {
+.ClickH a:link, .click a:visited {
 background-color: #f44336;
 color: white;
 padding: 14px 25px;
@@ -511,7 +511,7 @@ margin-left:auto;
 margin-right:auto;
 }
 
-.ClickH a:hover, a:active {
+.ClickH a:hover, .ClickH a:active {
 background-color: red;
 width: 50%;
 margin-left:auto; 
