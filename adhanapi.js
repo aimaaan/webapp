@@ -16,8 +16,10 @@ $(document).ready(function(){
             }
         })
         .then(data=>{
-            const todayData = data.data[new Date().getDate() - 1];
+            const todayData = data.data[new Date().getDate()-1];
             const tomorrowData = data.data[new Date().getDate()];
+            document.getElementById('todayd').innerHTML=new Date().getDate()+"/"+(new Date().getMonth()+1)+"/"+new Date().getFullYear();
+            document.getElementById('tomorrowd').innerHTML=(new Date().getDate()+1)+"/"+(new Date().getMonth()+1)+"/"+new Date().getFullYear();
             document.getElementById('Tfjr').innerHTML=todayData.timings.Fajr.replace(/\s\(\+\d+\)/, '');
             document.getElementById('Tdhuhr').innerHTML=todayData.timings.Dhuhr.replace(/\s\(\+\d+\)/, '');
             document.getElementById('Tasr').innerHTML=todayData.timings.Asr.replace(/\s\(\+\d+\)/, '');
