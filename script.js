@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     $(this).parents('li').addClass('currentpage');
             }
         });
+        console.log(currentPageUrl);
     });
     $("#myfoot").load("footer.html");
 });
