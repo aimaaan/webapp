@@ -105,10 +105,20 @@ html, body {
     font-size: 14px; 
   }
   
-.footer-content {
+  .footer-content {
     display: flex;
     justify-content: space-between;
 }
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 75px;
+    width: 100%;
+    display: inline-block;
+    background-color: #2AA8F8;
+    align-items: center;
+  }
+  
   #myfoot .right-section ul {
     display: flex;
     list-style: none;
@@ -193,6 +203,11 @@ html, body {
     background: #2AA8F8;
     box-shadow:  -5px 5px 0px #248fd3,
                 5px -5px 0px #30c1ff;
+    
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
+    margin: 50px;
 }
 
 .box > * {
@@ -239,7 +254,6 @@ html, body {
     border-radius: 20px;
     font-weight: normal;
     width: 45%;
-    height: fit-content;
     margin: 0 15px;
     padding: 15px;
     box-shadow:  -5px 5px 0px #d9d9d9,
