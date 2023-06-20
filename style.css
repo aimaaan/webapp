@@ -119,13 +119,8 @@ footer{
     align-items: center;
   }
   
-  #myfoot .right-section ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
   #myfoot ul {
+    display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -135,12 +130,6 @@ footer{
     margin-right: 10px;
     color: white;
     font-size: 15px;
-  }
-  #myfoot .left-section ul li a{
-    margin-right: 10px;
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
   }
   
   #myfoot .right-section ul li {
