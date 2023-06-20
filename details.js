@@ -40,6 +40,19 @@ function initMap(location) {
                 position: propertyLocation,
                 map: map
             });
+
+            var service = new google.maps.places.PlacesService(map);
+            service.getDetails({
+                placeId: results[0].place_id,
+                fields: ['name', 'rating']
+            }, function(place, status) {
+                if (status === google.maps.places.PlacesServiceStatus.OK) {
+                    $('#property-rating').text(place.rating);
+
+                    // Create the Google Place's plugin
+                    $('#google-reviews').html('<div class="gplace"><div class="gplace-reviews" data-placeid="' + place.place_id + '"></div></div>');
+                }
+            });
         } else {
             alert('Geocode was not successful for the following reason: ' + status);
         }
