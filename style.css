@@ -107,8 +107,13 @@ html, body {
     align-items: center;
   }
   
-  #myfoot ul {
+  #myfoot .right-section ul {
     display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  #myfoot ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -118,6 +123,12 @@ html, body {
     margin-right: 10px;
     color: white;
     font-size: 15px;
+  }
+  #myfoot .left-section ul li a{
+    margin-right: 10px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
   }
   
   #myfoot .right-section ul li {
