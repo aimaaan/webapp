@@ -17,7 +17,7 @@ html, body {
     flex-direction: column;
 }
 /*this is the navigation parts */
-.nav{
+.nav {
     font-weight: bolder;
     width: 100%;
     height: 85px;
@@ -25,42 +25,81 @@ html, body {
     margin: auto;
     border-bottom: 1px solid #2aa9f84d;
 }
-#logo{
+
+#logo {
     border-radius: 50%;
     padding: 12px;
     width: 70px;
 }
-.logo{
+
+.logo {
     width: 10%;
     float: left;
 }
-.logo p{
-    color: #2a7cf8;
+
+.navbtn {
     padding-top: 25px;
-    float: right;
-}
-.navbtn{
-    padding-top:25px;
     float: right;
     margin-right: 50px;
 }
-.navbtn li{
-    float: left;
-    display: block;
+
+.navbtn ul {
     list-style: none;
-    padding:0 25px 0 25px;
+    padding: 0;
+  }
+
+.navbtn li {
+    display: inline-block;
+    margin-right: 20px;
 }
-.navbtn a{
+
+.navbtn a {
     text-decoration: none;
+    color: #000;
 }
-.currentpage{
-    color:#2AA8F8;
+
+.currentpage {
+    color: #2AA8F8;
 }
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    right: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a:hover{
+    background-color: rgba(158, 228, 251, 25%);
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    float:left
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown svg {
+    width: 25px;
+    height: 30px;
+    fill: black;
+    vertical-align: middle;
+}
+
 /*this is the footer parts */
 #myfoot {
     background-color: #05BCD2;
-    padding: 10px 15px; /* Adjust the padding values */
-    font-size: 14px; /* Adjust the font size */
+    padding: 7px 15px;
+    font-size: 14px; 
   }
   
   .footer-content {
@@ -99,6 +138,12 @@ html, body {
 .logobig{
     width: 200px;
 }
+.pagetitle{
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
 .content {
     flex-grow: 1;
     width: 80%;
@@ -110,12 +155,15 @@ html, body {
 }
 .topcontent{
     text-align: center;
-    height: 500px;
-    margin: 30px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
     width: 100%;
-    background-color: rgba(158, 228, 251, 50%);
-    border-radius: 5%;
-    padding: 20px;
+    background-color: rgba(158, 228, 251, 25%);
+}
+.smalldesc{
+    width: 50%;
+    margin: auto;
 }
 #content{
     padding-top: 55px;
@@ -126,6 +174,7 @@ html, body {
     flex-direction: column;
     align-items: stretch;
     height: 100%;
+    margin: 50px;
 }
 
 .box > * {
@@ -134,10 +183,7 @@ html, body {
 }
 .news-wrapper {
     display: flex;
-    gap: 20px;
-    overflow: hidden;
-    align-items: center;
-    overflow-y: hidden; /* Hide vertical scrollbar */
+    flex-wrap: wrap;
 }
   
 .smallimg {
@@ -158,22 +204,11 @@ html, body {
     border-radius: 25px;
     margin: 15px;
 }
-#news{
-    padding: 15px;
-}
-.box h4{
-    float: left;
-    clear: left;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    height: 25px;
-}
 .smallbox{
     font-weight: normal;
     width: 45%;
-    height: 200px;
-    margin: 0;
+    height: fit-content;
+    margin: 0 15px;
     padding: 15px;
     border: 1px solid #05BCD2;
     border-radius: 20px;
@@ -199,30 +234,35 @@ html, body {
 .newsbox{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding: 15px;
     width: 100%;
     overflow: hidden;
 }
 .newsbox img{
-    width: 20%;
-    height: 175px;
+    float: left;
+    width: 15%;
+    height: 150px;
     border: 1px solid #2AA8F8;
     border-radius: 20px;
-    margin-left: 10px;
+    margin: 25px;
 }
 .contents{
-    width: 75%;
-    display: flex;
-    flex-direction: column;
+    float:right;
+    width: 85%;
+    margin: auto;
     justify-content: space-between;
 }
-.contents a{
+.text-container p{
+    padding: 10px;
+    margin: 10px;
+}
+.text-container a {
+    padding: 50px;
+    margin: auto;
     float: right;
     text-decoration: none;
     color: #0000EE;
 }
-
 .container {
     text-align: center;
     display: flex;
@@ -287,28 +327,33 @@ html, body {
     padding:5px;
     color: #313030;
 }
+#full-news-content h2{
+    font-size: 25px;
+    font-weight: bolder;
+}
 #full-news-content img{
-    border: 3px solid #05BCD2;
-    border-radius: 25px;
-    margin: 15px;
-    height: 300px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    float: left;
+    margin: 20px 50px;
+    border: 1px solid #2a7cf8;
 }
 #full-news-content{
-    width: 100%;
-    margin: auto;
-    padding-left: 200px;
-}
-.newspage{
-    display: flex;
-    float: left;
-    width: 75%;
-    margin:auto;
-}
-.newspage p{
-    font-size: 16px;
+    height: auto;
+    width: 70%;
+    margin: 50px auto;
+    padding: 50px;
     border-radius: 15px;
     border: 3px solid #05BCD2;
+    background-color: rgba(158, 228, 251, 15%);
+}
+#full-news-content p{
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: 20px;
     padding: 10px;
+    text-align: justify;
 }
 .ndate{
     color: #2a7cf8  ;
