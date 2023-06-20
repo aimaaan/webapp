@@ -96,7 +96,9 @@ html, body {
     flex-direction: column;
     min-height: 100vh;
 }
-
+.logobig{
+    width: 200px;
+}
 .content {
     flex-grow: 1;
     width: 80%;
@@ -109,7 +111,11 @@ html, body {
 .topcontent{
     text-align: center;
     height: 500px;
-    margin: 75px;
+    margin: 30px;
+    width: 100%;
+    background-color: rgba(158, 228, 251, 50%);
+    border-radius: 5%;
+    padding: 20px;
 }
 #content{
     padding-top: 55px;
@@ -236,7 +242,7 @@ html, body {
 #search {
     padding: 16px 24px;
     font-size: 16px;
-    border: 1px solid #dfe1e5;
+    border: 1px solid #05BCD2;
     border-radius: 24px;
     width: 100%;
     outline: none;
