@@ -41,11 +41,9 @@ const getNewsDocument = async () => {
       // Display the full content on the page
       const fullNewsContentElement = document.getElementById("full-news-content");
       fullNewsContentElement.innerHTML = `
+        <img src="${image}" alt="News Image class="newsimg">
         <h2>${title}</h2><p class="ndate">${date}</p>  
-        <div class="newspage">
-          <img src="${image}" alt="News Image class="newsimg">
-          <p>${content}</p>
-        </div>
+        <p>${content}</p>
       `;
     } else {
       console.log("News document not found");
