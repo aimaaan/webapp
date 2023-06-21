@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
-    $("#navbar").load("nav.html", function() {
+    $("#navbar").load("/html/nav.html", function() {
         var currentPageUrl = window.location.href;
         $('.nav a').each(function() {
             if ($(this).prop('href') === currentPageUrl) {
@@ -9,5 +9,5 @@ document.addEventListener('DOMContentLoaded', function(){
         });
         console.log(currentPageUrl);
     });
-    $("#myfoot").load("footer.html");
+    $("#myfoot").load("/html/footer.html");
 });
