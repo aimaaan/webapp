@@ -506,7 +506,7 @@ to {opacity: 1}
 }
 
 #myBtn:hover {
-    background-color: #rgba(42, 124, 248);
+    background-color:rgba(42, 124, 248);
 }
 .gallery {
     width: 235px;
@@ -588,4 +588,91 @@ margin: 40px;
 }
 .numbertext{
     font-size: 10px;
+}
+/*top mosque*/
+.pcon{
+    padding-top: 25px;
+    font-size: 16px;
+    text-align: center;
+    margin: 15px;
+}
+.button {
+    margin:0;
+    display: block;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(5, 188, 210, 90%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.tablem{
+    text-align: center;
+    border-spacing:5px; 
+    table-layout: fixed ;
+    margin: 25px auto;
+    width: 70%;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: rgba(42, 124, 248, 5%);
+}
+.tablem tr{
+    height: 1px;
+    width: 1px;
+}
+.tablem th{
+    text-align: center;
+}
+.tablem td p{
+    font-size: 15px;
+}
+.tablem td img{
+    height: 300px;
+    width: 300px;
+}
+.tablem td iframe{
+    height: 200px;
+    width: 100%;
+}
+.tablem a{
+    width: 50%;
+    margin: auto;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+.table-mosque{
+    margin: 35px 0;
+    border: 1px solid #2AA8F8;
+    padding: 25px;
+    border-radius: 25px;
+    background-color: rgba(158, 228, 251, 15%);
+}
+.table-mosque h2{
+    margin-bottom: 15px;
+}
+.table-mosque p{
+    font-size: 18px;
+    text-align: justify;
+    margin: auto;
+    width: 90%;
 }
