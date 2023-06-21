@@ -1,0 +1,808 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    color: #14142B;
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
+  body {
+    display: flex;
+    flex-direction: column;
+}
+/*this is the navigation parts */
+.nav {
+    font-weight: bolder;
+    width: 100%;
+    height: 85px;
+    overflow: hidden;
+    margin: auto;
+    border-bottom: 1px solid #2aa9f84d;
+}
+
+#logo {
+    border-radius: 50%;
+    padding: 12px;
+    width: 70px;
+}
+
+.logo {
+    width: 10%;
+    float: left;
+}
+
+.navbtn {
+    padding-top: 25px;
+    float: right;
+    margin-right: 50px;
+}
+
+.navbtn ul {
+    list-style: none;
+    padding: 0;
+  }
+
+.navbtn li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbtn a {
+    text-decoration: none;
+    color: #000;
+}
+
+.currentpage {
+    color: #2AA8F8!important;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    right: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a:hover{
+    background-color: rgba(158, 228, 251, 25%);
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown svg {
+    width: 25px;
+    height: 30px;
+    fill: black;
+    vertical-align: middle;
+}
+
+/*this is the footer parts */
+#myfoot {
+    background-color: #05BCD2;
+    padding: 7px 15px;
+    font-size: 14px; 
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #myfoot .right-section ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  #myfoot ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myfoot .left-section ul li {
+    margin-right: 10px;
+    color: white;
+    font-size: 15px;
+  }
+  #myfoot .left-section ul li a{
+    margin-right: 10px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  
+  #myfoot .right-section ul li {
+    margin-left: 10px;
+  }
+  
+  #myfoot img {
+    margin-top: 10px;
+    height: 35px;
+  }
+/*this is the content parts */
+.flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.logobig{
+    width: 200px;
+}
+.pagetitle{
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+.content {
+    flex-grow: 1;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.topcontent{
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: rgba(158, 228, 251, 25%);
+}
+.smalldesc{
+    width: 50%;
+    margin: auto;
+}
+#content{
+    padding-top: 55px;
+    margin: auto;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
+    margin: 50px;
+}
+
+.box > * {
+    flex-grow: 1;
+    overflow: auto;
+}
+.news-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.smallimg {
+    border: 1px solid #2a7cf8;
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin: 15px;
+} 
+.conshe{
+    margin: auto;
+    padding: 20px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+.conshe table{
+    border-radius: 25px;
+    margin: 15px;
+}
+.smallbox{
+    font-weight: normal;
+    width: 45%;
+    height: fit-content;
+    margin: 0 15px;
+    padding: 15px;
+    border: 1px solid #05BCD2;
+    border-radius: 20px;
+    background-color: rgba(42, 124, 248, 2%);
+}
+.smallbox a{
+    font-style: italic;
+    float: right;
+    color: #0000EE;
+    text-decoration: none;
+}
+.bigbox{
+    width: 75%;
+    margin: 20px auto;
+    border-radius: 10px;
+    background: rgba(158, 228, 251, 15%);
+}
+.bigbox h4{
+    padding-top: 10px;
+    padding-left: 25px;
+}
+.newsbox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+}
+.newsbox img{
+    float: left;
+    width: 15%;
+    height: 150px;
+    border: 1px solid #2AA8F8;
+    border-radius: 10px;
+    margin: 25px;
+}
+.contents{
+    float:right;
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
+}
+.text-container p{
+    width: 85%;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+}
+.text-container a {
+    padding: 50px;
+    margin: auto;
+    float: right;
+    text-decoration: none;
+    color: #0000EE;
+}
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+}
+
+.search-container {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+}
+
+#search {
+    padding: 16px 24px;
+    font-size: 16px;
+    border: 1px solid #05BCD2;
+    border-radius: 24px;
+    width: 100%;
+    outline: none;
+}
+
+#search:focus {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.property-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.property-card {
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+}
+
+.property-card img {
+    width: 100%;
+    height: auto;
+}
+  
+.demTable th {
+    background-color: rgba(158, 228, 251, 25%);
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #05BCD2;
+}
+.demTable td {
+    padding: 10px;
+    text-align: left;
+}
+  
+.demTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.demTable tbody tr:hover {
+    background-color: #ebebeb;
+}
+.table-container {
+    width: 70%;
+    display: flex;
+} 
+.demTable {
+    border: 1px solid #05BCD2;
+    border-collapse: collapse;
+    width: 50%; 
+    margin-right: 10px;
+}
+#full-news-content h2{
+    font-size: 25px;
+    font-weight: bolder;
+}
+#full-news-content img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    float: left;
+    margin: 20px 50px;
+    border: 1px solid #2a7cf8;
+}
+#full-news-content{
+    height: auto;
+    width: 70%;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 15px;
+    border: 3px solid #05BCD2;
+    background-color: rgba(158, 228, 251, 15%);
+}
+#full-news-content p{
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: justify;
+}
+.ndate{
+    color: #2a7cf8  ;
+}
+
+/* about page*/
+.part1{
+    text-align: center;
+}
+.part1 p{
+    text-align: center;
+    width: 65%;
+    margin: auto;
+}
+.part2{
+    width: 100%;
+    text-align: justify;
+    margin: 90px auto 50px auto;    
+    display: flex;
+    justify-content: center;
+}
+.part2 h5{
+    text-align: center;
+}
+.part2 #mission{
+    width: 40%;
+    float: left;
+    margin: 10px;
+}
+.part2 #vision{
+    width: 40%;
+    float: left;
+    margin: 10px;
+}
+.part3{
+    width: 100%;
+    background-color: #05BCD2;
+    text-align: justify;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin:auto;
+}
+.part3 h5{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+}
+.part3 ul{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.part3 img{
+    margin-top: 10px;
+    height: 35px;
+}
+/*mosque info*/
+.mySlides img {
+display: block;
+width: 70%;
+margin-left:auto; 
+margin-right:auto;
+}
+.mySlides {
+    margin-top: 15px;
+    display: none;
+}
+.mySlides img{
+    width: 60%;
+    border: 1px solid black;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dot {
+cursor: pointer;
+height: 5px;
+width: 5px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+}
+.myTop{
+    margin: 15px;
+    width: 100%;
+    background-color: rgba(158, 228, 251, 35%);
+    text-align:center;
+    font-family:serif;
+    font-size: 80px;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(42, 124, 248, 85%);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+#myBtn:hover {
+    background-color:rgba(42, 124, 248);
+}
+.gallery {
+    width: 235px;
+    height: 380px;
+    padding: 15px;
+    margin: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.gallery:hover {
+border: 1px solid #777;
+}
+
+.gallery img {
+width: 235px;
+height: 250px;
+}
+
+div.desc {
+padding: 15px;
+text-align: center;
+}
+
+.responsive {
+padding: 15px;
+float: left;
+width: 250px;
+}
+
+@media only screen and (max-width: 700px) {
+.responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+}
+}
+
+@media only screen and (max-width: 500px) {
+.responsive {
+    width: 100%;
+}
+}
+.ClickH {
+overflow: hidden;
+margin: 40px;
+}
+.ClickH a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #05BCD2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    }
+
+.ClickH a:hover {
+    background-color:rgba(5, 188, 210, 90%);
+}
+.nice{
+    display: flex;
+    float: left;
+    justify-content: space-evenly;
+}
+.constrainer{
+    margin: auto;
+    width: 45%;
+}
+.constrainer p{
+    margin: auto;
+    width: 55%;
+    font-size: 13px;
+}
+.constrainer h2{
+    font-size: 30px;
+}
+.numbertext{
+    font-size: 10px;
+}
+/*top mosque*/
+.pcon{
+    padding-top: 25px;
+    font-size: 16px;
+    text-align: center;
+    margin: 15px;
+}
+.button {
+    margin:0;
+    display: block;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(5, 188, 210, 90%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.tablem{
+    text-align: center;
+    border-spacing:5px; 
+    table-layout: fixed ;
+    margin: 25px auto;
+    width: 70%;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: rgba(42, 124, 248, 5%);
+}
+.tablem tr{
+    height: 1px;
+    width: 1px;
+}
+.tablem th{
+    text-align: center;
+}
+.tablem td p{
+    font-size: 15px;
+}
+.tablem td img{
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+}
+.tablem td iframe{
+    height: 200px;
+    width: 100%;
+}
+.tablem a{
+    width: 50%;
+    margin: auto;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+.table-mosque{
+    margin: 35px 0;
+    border: 1px solid #2AA8F8;
+    padding: 25px;
+    border-radius: 25px;
+    background-color: rgba(158, 228, 251, 15%);
+}
+.table-mosque h2{
+    margin-bottom: 15px;
+}
+.table-mosque p{
+    font-size: 18px;
+    text-align: justify;
+    margin: auto;
+    width: 90%;
+}
+/* donation page */
+.doncon {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.donbox {
+    padding: 25px;
+    flex: 1;
+    height: 500px;
+    background-color: rgba(158, 228, 251, 45%);
+    border-radius: 25px;
+}
+.donbox table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 0;
+    margin: auto;
+}
+.donbox th{
+    padding: 15px;
+}
+.donbox td{
+    padding: 10px;
+}
+.donbox td img{
+    height: inherit;
+    width: inherit;
+}
+.donbox td picture{
+    height: 150px;
+    width: 150px;
+    padding: 15px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+.donbox p {
+    padding: 20px;
+}
+.donate-form {
+    margin-top: 50px;
+    height: 100%;
+    padding: 50px;
+}
+.donation-details {
+    display: flex;
+}
+.smalldonbox {
+    flex: 1;
+    margin-right: 10px;
+}
+.smalldonbox label{
+    font-weight: bold;
+}
+.smalldonbox:last-child {
+    margin-right: 0;
+}
+.smalldonbox input[type="text"],
+.smalldonbox input[type="email"] {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+    background-color: white;
+    border: none;
+}
+.smalldonbox input[type="text"]:focus,
+.smalldonbox input[type="email"]:focus {
+    outline: none;
+    border: 1px solid #05BCD2;
+}
+.donation-amount {
+    display: flex;
+    flex-direction: column;
+}
+
+.donation-header {
+    margin-bottom: 10px;
+}
+.amount-choice {
+    display: flex;
+}
+.donation-amount label {
+    margin-right: 10px;
+}
+.donation-amount input[type="radio"] {
+    margin-right: 5px;
+}
+.donation-amount input[type="text"] {
+    width: 300px;
+    margin-left: 5px;
+    border: 0px none;
+    background-color: transparent;
+    outline:none ;
+    color: black;
+}
+.donation-amount input[type="text"]:focus{
+    color: white;
+    outline:none ;
+}
+.donation-amount input[type="text"]::placeholder{
+    color: black;
+    outline:none ;
+}
+.donation-amount input[type="text"]:focus::placeholder{
+    color: white;
+    outline:none ;
+}
+.donation-box input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+.donation-box label {
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: white;
+    cursor: pointer;
+}
+.donation-box input[type="radio"]:checked + label {
+    background-color: rgba(42, 124, 248, 85%);
+    color: #fff;
+}
