@@ -25,7 +25,7 @@ $(document).ready(function() {
                         <img src="${property.imageUrl}" alt="${property.description}">
                         <h2>${property.location}</h2>
                         <p>${property.description}</p>
-                        <a href="review.html?location=${encodeURIComponent(property.location)}">Review</a>
+                        <a href="/html/review.html?location=${encodeURIComponent(property.location)}">Review</a>
                     </div>
                 `);
                         
