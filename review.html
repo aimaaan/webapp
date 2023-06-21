@@ -1,51 +1,34 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Review Page</title>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,700&family=Poppins:ital@1&display=swap" rel="stylesheet">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpeAsAiIIsF_Zi0hZ2ByAq2bphPsvuCjw&libraries=places"></script>
   </head>
   <body>
-    <h1>Review Page</h1>
-    <div id="property-details">
-      <h2 id="place-name"></h2>
-      <p id="place-address"></p>
-      <p>Rating: <span id="place-rating"></span></p>
-      <a id="review-link" href="">See reviews on Google Maps</a>
+    <nav id="navbar"></nav>
+    <div class="flex-wrapper">
+        <div class="content">
+            <div id="review-content"></div>
+            <h1>Review Page</h1>
+            <div id="property-details">
+                <h2 id="place-name"></h2>
+                <p id="place-address"></p>
+                <p>Rating: <span id="place-rating"></span></p>
+                <a id="review-link" href="">See reviews on Google Maps</a>
+        </div>
+        <footer id="myfoot"></footer>
     </div>
 
-    <script>
-    var service;
-    var map;
-
-    function getPlaceDetails() {
-        var request = {
-            placeId: 'ChIJ5T6hbjW2zTERX-kZfjAKck8', 
-            fields: ['name', 'rating', 'formatted_address', 'url']
-        };
-
-        service = new google.maps.places.PlacesService(map);
-        service.getDetails(request, callback);
-    }
-
-    function callback(place, status) {
-        if (status == google.maps.places.PlacesServiceStatus.OK) {
-            document.getElementById('place-name').textContent = place.name;
-            document.getElementById('place-address').textContent = place.formatted_address;
-            document.getElementById('place-rating').textContent = place.rating;
-            document.getElementById('review-link').href = place.url;
-        }
-    }
-
-    $(document).ready(function() {
-        map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: -33.866, lng: 151.196},
-            zoom: 15
-        });
-        
-        getPlaceDetails();
-    });
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="review.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
