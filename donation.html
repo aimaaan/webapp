@@ -102,6 +102,7 @@
               </div>
             </div>
           </div>
+          <button id="donnow">Donate</button>
           </div>
           </div>
           </div>
@@ -116,7 +117,13 @@
         $('#custom-amount').click(function() {
           $('#donation-custom').prop('checked', true);
         });
+        const button = document.getElementById('donnow');
+        button.addEventListener('click', function() {
+        window.location.href = 'thanks.html';
+      });
     });
+    
+  </script>
   </script>
 </body>
 </html>
