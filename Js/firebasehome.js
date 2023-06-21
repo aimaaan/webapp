@@ -40,7 +40,7 @@ getDocs(q)
             const image = newsData.image;
 
             //full news
-            const fullContentPageURL = `fullnews.html?id=${id}`;
+            const fullContentPageURL = `/html/fullnews.html?id=${id}`;
 
             // Limit title to the first two words
             const titleWords = title.split(" ");

@@ -35,7 +35,7 @@ getDocs(q)
             const image = newsData.image;
 
             //full news
-            const fullContentPageURL = `fullnews.html?id=${id}`;
+            const fullContentPageURL = `/html/fullnews.html?id=${id}`;
 
             // Limit content to 25 words
             const words = content.split(' ');
