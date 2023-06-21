@@ -630,6 +630,7 @@ margin: 40px;
     font-size: 15px;
 }
 .tablem td img{
+    border-radius: 10px;
     height: 300px;
     width: 300px;
 }
