@@ -380,156 +380,8 @@ html, body {
 .ndate{
     color: #2a7cf8  ;
 }
-/*mosqueinfo*/
-.mySlides img {
-    display: block;
-    width: 50%;
-    margin-left:auto; 
-    margin-right:auto;
-  }
-  
-  /* Position the image container (needed to position the left and right arrows) */
-  .container {
-    position: relative;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
-  .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
 
-/* Position the "next button" to the right */
-.next {
-right: 0;
-border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-background-color: rgba(0,0,0,0.8);
-}
-
- 
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-/* The dots/bullets/indicators */
-.dot {
-cursor: pointer;
-height: 15px;
-width: 15px;
-margin: 0 2px;
-background-color: #bbb;
-border-radius: 50%;
-display: inline-block;
-transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-animation-name: fade;
-animation-duration: 1.5s;
-}
-
-@keyframes fade {
-from {opacity: .4} 
-to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-.prev, .next,.text {font-size: 11px}
-}
-.myTop{
-text-align:center;
-font-family:serif;
-font-size: 100px;
-background-color:#2AA8F8;
-}
-#myBtn {
-display: none;
-position: fixed;
-bottom: 20px;
-right: 30px;
-z-index: 99;
-font-size: 18px;
-border: none;
-outline: none;
-background-color: red;
-color: white;
-cursor: pointer;
-padding: 15px;
-border-radius: 4px;
-}
-
-#myBtn:hover {
-background-color: #555;
-}
-
-.myMosque img{
-border: 1px solid #ddd;
-border-radius: 4px;
-padding: 5px;
-width: 150px;
-float: left;
-width: 33.33%;
-padding: 5px;
-}
-.myMosque img:hover {
-box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-.row::after {
-content: "";
-clear: both;
-display: table;
-}
-
-.ClickH a:link, .click a:visited {
-background-color: #f44336;
-color: white;
-padding: 14px 25px;
-text-align: center;
-text-decoration: none;
-display: block;
-width: 50%;
-margin-left:auto; 
-margin-right:auto;
-}
-
-.ClickH a:hover, .ClickH a:active {
-background-color: red;
-width: 50%;
-margin-left:auto; 
-margin-right:auto;
-}
+/* about page*/
 .part1{
     text-align: center;
 }
@@ -582,4 +434,158 @@ margin-right:auto;
 .part3 img{
     margin-top: 10px;
     height: 35px;
+}
+/*mosque info*/
+.mySlides img {
+display: block;
+width: 70%;
+margin-left:auto; 
+margin-right:auto;
+}
+.mySlides {
+    margin-top: 15px;
+    display: none;
+}
+.mySlides img{
+    width: 60%;
+    border: 1px solid black;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dot {
+cursor: pointer;
+height: 5px;
+width: 5px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+}
+.myTop{
+    margin: 15px;
+    width: 100%;
+    background-color: rgba(158, 228, 251, 35%);
+    text-align:center;
+    font-family:serif;
+    font-size: 80px;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(42, 124, 248, 85%);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+#myBtn:hover {
+    background-color: #rgba(42, 124, 248);
+}
+.gallery {
+    width: 235px;
+    height: 380px;
+    padding: 15px;
+    margin: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.gallery:hover {
+border: 1px solid #777;
+}
+
+.gallery img {
+width: 235px;
+height: 250px;
+}
+
+div.desc {
+padding: 15px;
+text-align: center;
+}
+
+.responsive {
+padding: 15px;
+float: left;
+width: 250px;
+}
+
+@media only screen and (max-width: 700px) {
+.responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+}
+}
+
+@media only screen and (max-width: 500px) {
+.responsive {
+    width: 100%;
+}
+}
+.ClickH {
+overflow: hidden;
+margin: 40px;
+}
+.ClickH a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #05BCD2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    }
+
+.ClickH a:hover {
+    background-color:rgba(5, 188, 210, 90%);
+}
+.nice{
+    display: flex;
+    float: left;
+    justify-content: space-evenly;
+}
+.constrainer{
+    margin: auto;
+    width: 45%;
+}
+.constrainer p{
+    margin: auto;
+    width: 55%;
+    font-size: 13px;
+}
+.constrainer h2{
+    font-size: 30px;
+}
+.numbertext{
+    font-size: 10px;
 }
