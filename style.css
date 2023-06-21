@@ -720,3 +720,89 @@ margin: 40px;
 .donbox p {
     padding: 20px;
 }
+.donate-form {
+    margin-top: 50px;
+    height: 100%;
+    padding: 50px;
+}
+.donation-details {
+    display: flex;
+}
+.smalldonbox {
+    flex: 1;
+    margin-right: 10px;
+}
+.smalldonbox label{
+    font-weight: bold;
+}
+.smalldonbox:last-child {
+    margin-right: 0;
+}
+.smalldonbox input[type="text"],
+.smalldonbox input[type="email"] {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+    background-color: white;
+    border: none;
+}
+.smalldonbox input[type="text"]:focus,
+.smalldonbox input[type="email"]:focus {
+    outline: none;
+    border: 1px solid #05BCD2;
+}
+.donation-amount {
+    display: flex;
+    flex-direction: column;
+}
+
+.donation-header {
+    margin-bottom: 10px;
+}
+.amount-choice {
+    display: flex;
+}
+.donation-amount label {
+    margin-right: 10px;
+}
+.donation-amount input[type="radio"] {
+    margin-right: 5px;
+}
+.donation-amount input[type="text"] {
+    width: 300px;
+    margin-left: 5px;
+    border: 0px none;
+    background-color: transparent;
+    outline:none ;
+    color: black;
+}
+.donation-amount input[type="text"]:focus{
+    color: white;
+    outline:none ;
+}
+.donation-amount input[type="text"]::placeholder{
+    color: black;
+    outline:none ;
+}
+.donation-amount input[type="text"]:focus::placeholder{
+    color: white;
+    outline:none ;
+}
+.donation-box input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+.donation-box label {
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: white;
+    cursor: pointer;
+}
+.donation-box input[type="radio"]:checked + label {
+    background-color: rgba(42, 124, 248, 85%);
+    color: #fff;
+}

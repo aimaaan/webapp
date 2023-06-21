@@ -66,11 +66,57 @@
         </table>
       </div>
       <div class="donbox">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque pariatur excepturi ad exercitationem tempora amet cumque a ducimus veniam! Velit autem aspernatur aliquam recusandae dolorum laboriosam vel fugit ad pariatur, voluptates temporibus iusto fugiat! Sit ab voluptatum quasi magni incidunt aliquid laudantium neque ut quaerat iure molestias, commodi, sunt esse.</p>
+        <div class="donate-form">
+          <div class="donation-details">
+            <div class="smalldonbox">
+              <label for="phone">Phone Number</label><br>
+              <input type="text" id="phone">
+            </div>
+            <div class="smalldonbox">
+              <label for="email">Email</label><br>
+              <input type="email" id="email">
+            </div>
+          </div>
+          <div class="donation-amount">
+            <div class="donation-header">
+              <h4>Donation amount</h4>
+            </div>
+            <div class="amount-choice">
+              <div class="donation-box">
+                <input type="radio" id="donation-1" name="donation-amount" value="1">
+                <label for="donation-1">RM1</label>
+              </div>
+              <div class="donation-box">
+                <input type="radio" id="donation-5" name="donation-amount" value="5">
+                <label for="donation-5">RM5</label>
+              </div>
+              <div class="donation-box">
+                <input type="radio" id="donation-10" name="donation-amount" value="10">
+                <label for="donation-10">RM10</label>
+              </div>
+              <div class="donation-box">
+                <input type="radio" id="donation-custom" name="donation-amount" value="custom">
+                <label for="donation-custom">
+                  <input type="text" id="custom-amount" name="custom-amount" placeholder="Enter custom amount">
+                </label>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <footer id="myfoot"></footer>
   <script src="script.js"></script>
+  <script>
+    $(document).ready(function() {
+        $('#custom-amount').click(function() {
+          $('#donation-custom').prop('checked', true);
+        });
+    });
+  </script>
 </body>
 </html>
