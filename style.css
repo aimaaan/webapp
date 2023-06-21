@@ -530,3 +530,47 @@ width: 50%;
 margin-left:auto; 
 margin-right:auto;
 }
+.part1{
+    text-align: center;
+}
+.part2{
+    width: 100%;
+    text-align: center;
+    margin: 90px auto 50px auto;
+    display: flex;
+    justify-content: center;
+}
+.part2 #mission{
+    width: 40%;
+    float: left;
+    margin: 10px;
+}
+.part2 #vision{
+    width: 40%;
+    float: left;
+    margin: 10px;
+}
+.part3{
+    width: 100%;
+    background-color: #05BCD2;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin:auto;
+}
+.part3 h5{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+}
+.part3 ul{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.part3 img{
+    margin-top: 10px;
+    height: 35px;
+}
