@@ -677,3 +677,46 @@ margin: 40px;
     margin: auto;
     width: 90%;
 }
+/* donation page */
+.doncon {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.donbox {
+    padding: 25px;
+    flex: 1;
+    height: 500px;
+    background-color: rgba(158, 228, 251, 45%);
+    border-radius: 25px;
+}
+.donbox table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 0;
+    margin: auto;
+}
+.donbox th{
+    padding: 15px;
+}
+.donbox td{
+    padding: 10px;
+}
+.donbox td img{
+    height: inherit;
+    width: inherit;
+}
+.donbox td picture{
+    height: 150px;
+    width: 150px;
+    padding: 15px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+.donbox p {
+    padding: 20px;
+}
