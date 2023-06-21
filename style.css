@@ -533,12 +533,20 @@ margin-right:auto;
 .part1{
     text-align: center;
 }
+.part1 p{
+    text-align: center;
+    width: 65%;
+    margin: auto;
+}
 .part2{
     width: 100%;
-    text-align: center;
-    margin: 90px auto 50px auto;
+    text-align: justify;
+    margin: 90px auto 50px auto;    
     display: flex;
     justify-content: center;
+}
+.part2 h5{
+    text-align: center;
 }
 .part2 #mission{
     width: 40%;
@@ -553,12 +561,13 @@ margin-right:auto;
 .part3{
     width: 100%;
     background-color: #05BCD2;
-    text-align: center;
+    text-align: justify;
     padding-top: 50px;
     padding-bottom: 50px;
     margin:auto;
 }
 .part3 h5{
+    text-align: center;
     font-size: 18px;
     color: white;
     font-weight: 500;
