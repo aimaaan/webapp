@@ -1,4 +1,3 @@
-
     var service;
     var map;
 
